@@ -18,10 +18,14 @@ class Usuarios{
     public void Edit_cargo(String cargo){ this.cargo = cargo; }
     public void Edit_nome (String nome) { this.cargo = nome;  }
 
+    public void consulta(){
+        System.out.println("Nome: "+this.nome+" Cargo: "+this.cargo+".\n");
+    }
+
     public void recuperar(){
         Scanner ler = new Scanner(System.in);
         System.out.println("Descrição de palavra Chave: "+this.descricao_chave+"\nDigite a chave.");
-        String chave = ler.nextLine();
+        String chave = ler.nextLine(); 
         if (chave.intern() == this.chave.intern()) {
             System.out.println(this.senha);
         }
