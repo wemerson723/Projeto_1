@@ -4,7 +4,7 @@ import java.util.Scanner;
 //import java.util.Data;
 //import java.text.SimpleDateFormat;
 
-class Gerencia {  
+class Gerencia extends Interface{  
 
     private ArrayList<String> Universidades;
     private ArrayList<Projeto> Projetos;
@@ -240,7 +240,13 @@ class Gerencia {
             System.out.println("Data de termino do projeto:" + this.Projetos.get(i).Get_data_termino().Get_dia() + this.Projetos.get(i).Get_data_termino().Get_mes() + this.Projetos.get(i).Get_data_termino().Get_ano() + this.Projetos.get(i).Get_data_termino().Get_horas() + this.Projetos.get(i).Get_data_termino().Get_minutos() + this.Projetos.get(i).Get_data_termino().Get_segundos() + ".");
         }
     }
-
+    
+    @Override
+    public void CalvoDeCria() {
+        System.out.println("Não Calvo de Cria.\n");
+        System.out.println("-------------------\n");
+    }
+    
     public Gerencia(){
         this.Projetos = new ArrayList<Projeto>();
         this.Usuarios = new ArrayList<Usuarios>();
