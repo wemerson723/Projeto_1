@@ -4,7 +4,7 @@ import java.util.Scanner;
 //import java.util.Data;
 //import java.text.SimpleDateFormat;
 
-class Gerencia extends Interface{  
+class Gerencia implements Interface{  
 
     private ArrayList<String> Universidades;
     private ArrayList<Projeto> Projetos;
