@@ -16,6 +16,10 @@ class Data{
     public int Get_mes      (){ return mes;      }
     public int Get_ano      (){ return ano;      }
 
+    public void consulta(){
+        System.out.println(this.dia +"/"+ this.mes +"/"+ this.ano +". "+ this.horas +":"+ this.minutos +":"+ this.segundos + ".\n");
+    }
+
     public boolean check(){ if ((segundos != -1) && (minutos != -1) && (horas != -1) && (dia != -1) && (mes != -1) && (ano != -1)){ return true; } else{ return false;}}
         
     public void Edit(){
