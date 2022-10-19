@@ -1,9 +1,10 @@
 
-public abstract class SC{
+public abstract class SC<T>{
     private int identificacao;
     private String descricao;
     private Data data_inicio;
     private Data data_termino;
+    private T generic;
 
     public int                  Get_identificacao(){        return identificacao;          }
     public String               Get_descricao(){            return descricao;              }
